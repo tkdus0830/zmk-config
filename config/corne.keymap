@@ -33,14 +33,14 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  DEL |     |     |  <  |  >  |      |     |  7  |  8  |  9  |  (  |  )  |  \   |
-// | CTRL |     |     |  `  |  _  |  +   |     |  4  |  5  |  6  |  [  |  ]  |      |
-// | SHFT |     |     |  ~  |  =  |  -   |     |  1  |  2  |  3  |  {  |  }  | RALT |
+// |  DEL |     |     |  <  |  >  |      |     |  (  |  7  |  8  |  9  |  )  |  \   |
+// | CTRL |     |     |  `  |  _  |  +   |     |  [  |  4  |  5  |  6  |  ]  |      |
+// | SHFT |     |     |  ~  |  =  |  -   |     |  {  |  1  |  2  |  3  |  }  | RALT |
 //                     | GUI |     | SPC |     | ENT | BKSP |  0  |
                         bindings = <
-   &kp DEL   &trans  &trans  &mt GT LT  &kp GT     &trans          &mt AMPS N7  &mt ASTRK N8  &kp N9       &mt RPAR LPAR &kp RPAR &kp BACKSLASH
-   &kp LCTRL &trans  &trans  &kp GRAVE  &kp UNDER  &kp PLUS        &mt DLLR N4  &mt PRCNT N5  &mt CARET N6 &mt RBKT LBKT &kp RBKT &trans
-   &kp LSHFT &trans  &trans  &kp TILDE  &kp EQUAL  &kp MINUS       &mt EXCL N1  &mt AT N2     &mt HASH N3  &mt RBRC LBRC &kp RBRC &kp RALT
+   &kp DEL   &trans  &trans  &mt GT LT  &kp GT     &trans          &mt RPAR LPAR &mt AMPS N7  &mt ASTRK N8  &kp N9       &kp RPAR &kp BACKSLASH
+   &kp LCTRL &trans  &trans  &kp GRAVE  &kp UNDER  &kp PLUS        &mt RBKT LBKT &mt DLLR N4  &mt PRCNT N5  &mt CARET N6 &kp RBKT &trans
+   &kp LSHFT &trans  &trans  &kp TILDE  &kp EQUAL  &kp MINUS       &mt RBRC LBRC &mt EXCL N1  &mt AT N2     &mt HASH N3  &kp RBRC &kp RALT
                               &kp LGUI &trans &kp SPACE      &kp RET &kp BSPC  &kp N0
                         >;
                 };
